@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        /* Custom Styles for Contact Us Page */
+        .contact-us {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1d1d19;
+            margin-bottom: 20px;
+        }
+
+        .contact-us .form-label {
+            color: #1d1d19;
+        }
+
+        .contact-us .btn-primary {
+            background-color: #e6af2e;
+            border: none;
+        }
+
+        .contact-us .btn-primary:hover {
+            background-color: #f5d061;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            border: 2px solid #f5d061;
+        }
+
+        .insta-icon img {
+            width: 20px;
+            /* Adjust size as needed */
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .insta-icon  :nth-child(3) img{
+            width: 30px;
+            /* Adjust size as needed */
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .fixed-icon {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+            animation: jump 1s infinite;
+        }
+
+        .fixed-icon img {
+            width: 50px;
+            /* Adjust size as needed */
+            height: 50px;
+            cursor: pointer;
+        }
+
+        @keyframes jump {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                /* Start and end at the original position */
+            }
+
+            50% {
+                transform: translateY(-10px);
+                /* Move the icon 10px up */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fixed whatsapp icon -->
+    <div class="fixed-icon">
+        <a href="https://wa.me/message/DLHE4BU7XEOIG1 "><img src="img/whatsApp.png" alt="Icon"></a>
+    </div>
+
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>ENG <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>ENG</li>
+                    <li>MAL</li>
+                    <li>ARA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>ENG <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>ENG</li>
+                                    <li>MAL</li>
+                                    <li>ARA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <!-- <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div> -->
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./courses.html">COURSES</a></li>
+                            <li><a href="./about-us.html">ABOUT US</a>
+                            </li>
+                            <li><a href="./instructors.html">INSTRUCTORS</a></li>
+                            <li class="active"><a href="./contact-us.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <section class="contact-us">
+        <div class="container">
+            <!-- Contact Us-->
+            <h2 class="text-start">Contact Details</h2>
+            <ul class="list-unstyled">
+                <li><strong>Phone:</strong> +91 7601016745</li>
+                <li><strong>Email:</strong> elscoreacademy@gmail.com</li>
+                <li>
+                    <div class="insta-icon">
+                    <strong>Follow Us: &nbsp;</strong>
+
+                        <a href="https://instagram.com/elscoreacademy" target="_blank"><img src="img/instagram.png" alt="Icon"></a>
+                        <a class="whatsApp" href="https://wa.me/1234567890" target="_blank"><img src="img/WhatsApp.png" alt="Icon"></a>
+                    </div>
+                    
+                </li>
+            </ul>
+            <br><br>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <h2 class="text-start">Get in Touch</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST" role="form"
+                        class="php-email-form mt-4">
+                        <input type="hidden" name="access_key" value="c776af04-ac19-4cd6-8ceb-53cd2075f1eb">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Map -->
+                <div class="col-lg-6">
+
+                    <!-- Map -->
+                    <div class="map-container mt-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58158.30755138982!2d54.44596388145621!3d24.3501770803481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40e7483d11d5%3A0x7672bbc1a32c03c2!2sMusaffah%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1724278019543!5m2!1sen!2sin"
+                            width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/name-only-white.png" alt=""></a>
+                        </div>
+                        <p>Elscore Academy offers online classes with expert instructors, comprehensive courses, and
+                            interactive learning. We aim to provide the best education with flexible schedules.
+                        </p>
+                        </p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./courses.html">Courses</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li>
+                                <p class="text-muted">Phone: +91 7601016745</p>
+                            </li>
+                            <li>
+                                <p class="text-muted">Email: elscoreacademy@gmail.com</p>
+                            </li>
+                            <li>
+                                <p class="text-muted">Location: Abudabhi</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | Elscore Academy
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Ensure Bootstrap's Carousel functionality -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.testimonials__slider').owlCarousel({
+                items: 1, // Number of items to display
+                loop: true, // Loop through items
+                autoplay: true, // Enable autoplay
+                autoplayTimeout: 4000, // Autoplay interval (5 seconds)
+                nav: true, // Show next/prev buttons
+                dots: true, // Disable dots
+                navText: [' ', ' '], // Custom next/prev text
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

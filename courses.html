@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+/* Introduction Section */
+#introduction {
+    background-color: #005247; /* Accent color for a welcoming look */
+    color: #fff; /* White text for contrast */
+    padding: 3rem 0; /* Spacing around the section */
+    text-align: center; /* Center-align the text */
+}
+
+#introduction h1 {
+    font-size: 2.5rem; /* Larger heading for emphasis */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-weight: bold; /* Make the heading bold */
+    color: #f5d061;
+}
+
+#introduction p.lead {
+    font-size: 1.25rem; /* Slightly larger paragraph text for emphasis */
+    margin-bottom: 1rem; /* Space below the paragraph */
+    line-height: 1.6; /* Improve readability */
+    color: #d9d9d9;
+}
+
+/* Course Sections */
+.course-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 2rem; /* Spacing around each course section */
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+
+    margin: 40px 0px;
+    background-color: #fff; /* Default background color */
+}
+
+.course-section:nth-child(even) {
+    background-color: #e3e3e3!important; /* Alternate background color for visual distinction */
+}
+
+/* Course Image */
+.course-section .course-image {
+    flex: 1;
+    width: 100%;
+    max-height: 400px; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 300px; /* Ensure images have a minimum width */
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem; /* Optional: Rounded corners for images */
+}
+
+/* Course Content */
+.course-section .course-content {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the content and the button */
+}
+
+.course-section h2 {
+    font-size: 1.8rem; /* Course title size */
+    color: #1d1d19; /* Primary color for the title */
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0.9rem; /* Space below the title */
+}
+
+.course-section p {
+    font-size: 0.91rem; /* Slightly larger text for description */
+    color: #333; /* Darker text color for readability */
+    margin-bottom: 1.2rem; /* Space below the paragraph */
+}
+
+.custom-padding-1{
+    padding: 0px 150px;
+}
+
+.course-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.course-section ul li {
+    font-size: 0.9rem; /* Text size for list items */
+    color: #555; /* Subtle color for list items */
+    margin-bottom: 0.5rem; /* Space between list items */
+    line-height: 1.6; /* Improve readability */
+}
+
+.course-section ul li::before {
+    content: "✔"; /* Custom bullet point */
+    color: #e6af2e; /* Accent color for the bullet point */
+    margin-right: 0.5rem; /* Space between bullet and text */
+}
+
+/* Enroll Now Button */
+.course-section a.btn {
+    background-color: #1d1d19; /* Primary button background */
+    color: #fff; /* Button text color */
+    padding: 0.75rem 1.5rem; /* Button padding */
+    font-size: 1rem; /* Button text size */
+    text-transform: uppercase; /* Button text style */
+    border-radius: 0; /* Remove rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    align-self: flex-start; /* Align the button to the start of the container */
+    margin-top: 1rem; /* Space above the button */
+}
+
+.course-section a.btn:hover {
+    background-color: #333; /* Darker color on hover */
+}
+
+.fixed-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    animation: jump 1s infinite;
+}
+
+.fixed-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    cursor: pointer;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move the icon 10px up */
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-padding-1{
+    padding: 0px 50px;
+}
+    .course-section {
+        flex-direction: column; /* Stack image and content vertically on small screens */
+    }
+
+    .course-section .course-image {
+        width: 100%;
+        height: auto; /* Ensure image maintains aspect ratio */
+        margin-bottom: 1.5rem; /* Space below image */
+    }
+
+    .course-section .course-content {
+        width: 100%;
+    }
+
+    #introduction h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    #introduction p.lead {
+        font-size: 1.1rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .course-section h2 {
+        margin-top: 20px;
+        font-size: 1.75rem; /* Adjust course title size for smaller screens */
+    }
+
+    .course-section p,
+    .course-section ul li {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .course-section ul li::before {
+        font-size: 0.9rem; /* Adjust bullet size for smaller screens */
+    }
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+     <!-- fixed whatsapp icon -->
+     <div class="fixed-icon">
+        <a href="https://wa.me/message/DLHE4BU7XEOIG1 "><img src="img/whatsApp.png" alt="Icon"></a>
+    </div>
+
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>ENG <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>ENG</li>
+                    <li>MAL</li>
+                    <li>ARA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>ENG <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>ENG</li>
+                                    <li>MAL</li>
+                                    <li>ARA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <!-- <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div> -->
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li class="active"><a href="./courses.html">COURSES</a></li>
+                            <li><a href="./about-us.html">ABOUT US</a>
+                                <!-- <ul class="dropdown">
+                                    <li><a href="./about.html">KinderGard</a></li>
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="./instructors.html">INSTRUCTORS</a></li>
+                            <li><a href="./contact-us.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Breadcrumb Section Begin -->
+    <!-- <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Breadcrumb Section End -->
+
+
+
+
+
+     <!-- Introduction Section -->
+     <section id="introduction" class="py-5 text-center">
+        <div class="container">
+            <h1>Welcome to Our Courses</h1>
+            <p class="lead mt-3">At Elscore Academy, we offer a diverse range of courses designed to meet your educational and professional needs. Whether you're looking to improve your language skills, excel in academics, or deepen your understanding of Islamic studies, our courses provide the perfect platform for your growth. Explore our offerings and enroll today!</p>
+        </div>
+    </section>
+    <!-- Courses Section -->
+    <div class="custom-padding-1">
+        <!-- Spoken English Course -->
+        <section id="spoken-english" class="course-section py-5" style="background-color: #f5f5f5;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/courses/spoken-english-2.png" class="img-fluid" alt="Spoken English Course">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Spoken English Course</h2>
+                    <p>Looking to improve your English fluency? Discover why Elscore Academy is the right choice for you!</p>
+                    <ul>
+                        <li><b>Personalized Learning:</b> Our live, one-on-one online classes are designed to meet your specific needs.</li>
+                        <li><b>Expert Instructors:</b> Learn from highly qualified faculty with years of experience.</li>
+                        <li><b>Comprehensive Curriculum:</b> Covering reading, grammar, and conversation skills.</li>
+                        <li><b>Regular Assessments:</b> Track your progress with customized assessments.</li>
+                        <li><b>Interactive Practice Sessions:</b> Engage in real-life conversation practice.</li>
+                        <li><b>Flexible Timings:</b> Choose class times that work best for you.</li>
+                    </ul>
+                    <a href="./form.html" class="btn btn-primary mt-3">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- School Subjects Tuition -->
+        <section id="school-subjects" class="course-section py-5" style="background-color: #fff;">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="img/courses/1.png" class="img-fluid" alt="School Subjects Tuition">
+                </div>
+                <div class="col-lg-6">
+                    <h2>School Subjects Tuition</h2>
+                    <p>Want to excel in your school subjects? Elscore Academy is here to help you succeed from the comfort of your home!</p>
+                    <ul>
+                        <li><b>All Subjects Covered:</b> Math, Science, English, Social Studies, and more.</li>
+                        <li><b>Personalized Attention:</b> One-on-one online classes tailored to your needs.</li>
+                        <li><b>Top-Quality Educators:</b> Learn from experienced and passionate teachers.</li>
+                        <li><b>Flexible Learning:</b> Choose class timings that suit your schedule.</li>
+                        <li><b>Interactive and Engaging:</b> Enjoy engaging and effective learning experiences.</li>
+                        <li><b>Regular Progress Monitoring:</b> Continuous assessments to track your success.</li>
+                    </ul>
+                    <a href="./form.html" class="btn btn-primary mt-3">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Islamic Studies -->
+        <section id="islamic-studies" class="course-section py-5" style="background-color: #f5f5f5;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/courses/2.png" class="img-fluid" alt="Islamic Studies">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Hayyan : Madarasa and Islamic Studies</h2>
+                    <p>Looking to deepen your connection with your faith? Elscore Academy offers the perfect platform for your spiritual and educational growth.</p>
+                    <ul>
+                        <li><b>Extensive Course Offerings:</b> Quran recitation, memorization, Arabic language, and Islamic studies.</li>
+                        <li><b>Qualified Instructors:</b> Learn from experienced scholars and native Arabic speakers.</li>
+                        <li><b>Personalized Learning:</b> One-on-one online sessions tailored to your pace.</li>
+                        <li><b>Flexible Timings:</b> Choose schedules that fit your lifestyle.</li>
+                        <li><b>Interactive and Engaging:</b> Courses designed to be enriching and enjoyable.</li>
+                        <li><b>Holistic Religious Training:</b> Emphasizing spiritual growth and practical application.</li>
+                    </ul>
+                    <a href="./form.html" class="btn btn-primary mt-3">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spoken Arabic -->
+        <section id="spoken-arabic" class="course-section py-5" style="background-color: #fff;">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="img/courses/3.png" class="img-fluid" alt="Spoken Arabic">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Hala : Spoken Arabic Course</h2>
+                    <p>Unlock the world of Arabic communication with Elscore Academy's spoken Arabic courses.</p>
+                    <ul>
+                        <li><b>Comprehensive Course Offerings:</b> From beginner to advanced levels, covering all aspects of conversation.</li>
+                        <li><b>Native Arabic Instructors:</b> Learn from native speakers who bring language and culture into every lesson.</li>
+                        <li><b>Practical Learning Approach:</b> Engage in real-life conversations and daily dialogue practice.</li>
+                        <li><b>Tailored Lessons:</b> Personalized sessions designed to match your proficiency level.</li>
+                        <li><b>Flexible Scheduling:</b> Fit language learning into your busy schedule.</li>
+                        <li><b>Interactive and Engaging:</b> Dynamic lessons relevant to real-world situations.</li>
+                    </ul>
+                    <a href="./form.html" class="btn btn-primary mt-3">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Translation Course -->
+        <section id="translation" class="course-section py-5" style="background-color: #f5f5f5;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/courses/4.png" class="img-fluid" alt="Translation Course">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Translation Course</h2>
+                    <p>Bridge the language gap with expert translation skills, mastering translation between Arabic and English at Elscore Academy.</p>
+                    <ul>
+                        <li><b>Comprehensive Course Content:</b> Legal, technical, literary, and commercial translation.</li>
+                        <li><b>Experienced International Instructors:</b> Learn from seasoned translators and industry professionals.</li>
+                        <li><b>Practical Focus:</b> Hands-on translation practice with authentic materials.</li>
+                        <li><b>Advanced Tools:</b> Introduction to Computer-Assisted Translation (CAT) tools.</li>
+                        <li><b>Tailored Learning:</b> Personalized feedback and support to match your goals.</li>
+                        <li><b>Career-Ready Skills:</b> Equip yourself with techniques and industry insights for translation roles.</li>
+                    </ul>
+                    <a href="./form.html" class="btn btn-primary mt-3">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+
+</div>
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/name-only-white.png" alt=""></a>
+                        </div>
+                        <p>Elscore Academy offers online classes with expert instructors, comprehensive courses, and interactive learning. We aim to provide the best education with flexible schedules.
+                        </p></p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./courses.html">Courses</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li><p class="text-muted">Phone: +91 7601016745</p></li>
+                            <li><p class="text-muted">Email: elscoreacademy@gmail.com</p></li>
+                            <li><p class="text-muted">Location: Abudabhi</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | Elscore Academy
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

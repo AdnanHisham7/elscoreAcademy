@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elscore Academy</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .courses__section h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: rgb(27, 26, 26);
+        }
+
+        .courses__section .card {
+            background-color: #ECECEC;
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .courses__section .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .courses__section .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .courses__section .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .courses__section .card-text {
+            color: #666;
+        }
+
+        .courses__section .btn-primary {
+            background-color: #f5d061;
+            color: #000000;
+            border: none;
+            border-radius: 20px;
+            padding: 0.5rem 1.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .courses__section .btn-primary:hover {
+            background-color: #eebc28;
+            color: black;
+        }
+
+        /* Custom CSS for the "What Makes Us Stand Out" section */
+
+        .full-width-wrapper {
+            width: 100vw;
+            /* Full viewport width */
+            margin-left: calc(-50vw + 50%);
+            /* Center the wrapper */
+            margin-right: calc(-50vw + 50%);
+            /* Ensure full width */
+            overflow: hidden;
+            /* Prevent overflow issues */
+        }
+
+        /* Standout section styling */
+        .standout-section {
+            background-color: #005247;
+            /* Accent color */
+            padding: 60px 0;
+            box-sizing: border-box;
+            /* Include padding in width calculation */
+            width: 100%;
+            /* Ensure it spans full width */
+        }
+
+        .standout-section h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* Container styling within the section */
+        .standout-section .container {
+            padding: 0 15px;
+            /* Padding for content */
+            max-width: 1200px;
+            /* Max width for content */
+            margin: 0 auto;
+            /* Center content */
+        }
+
+        /* Icon styling */
+        .standout-icon {
+            font-size: 3rem;
+            /* Adjust size as needed */
+            color: #e6af2e;
+            /* Primary color */
+            margin-bottom: 20px;
+        }
+
+        /* Title styling */
+        .standout-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* Larger size for better readability */
+            color: #f5d061;
+            /* Primary color */
+            margin-bottom: 10px;
+            /* Adjust spacing */
+        }
+
+        /* Text styling */
+        .standout-text {
+            color: #d9d9d9;
+            /* Neutral dark grey */
+            font-size: 1.1rem;
+            /* Slightly larger size for readability */
+        }
+
+        /* Feature block styling */
+        .standout-feature {
+            text-align: center;
+            /* Center text */
+            padding: 20px;
+        }
+
+        .testimonials {
+            background-color: #F3F2EE;
+            padding: 60px 0;
+        }
+
+        .testimonials h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+        }
+
+        .testimonial__item {
+            background-color: #ffffff;
+            padding: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 600px;
+
+            /* Adjust the width as needed */
+            max-width: 100%;
+            /* Ensure it doesn't exceed the container width */
+            margin: 0 auto;
+            /* Center it horizontally */
+        }
+
+
+
+        .testimonial__photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .blockquote {
+            border-left: 8px solid #e6af2e;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .blockquote-footer {
+            font-size: 1rem;
+        }
+
+        .fixed-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    animation: jump 1s infinite;
+}
+
+.fixed-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    cursor: pointer;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move the icon 10px up */
+    }
+}
+
+
+        @media (max-width: 768px) {
+            .testimonial__item{
+                width: 90%;
+            }
+            .testimonial__item .col-md-10 {
+                width: 90%;
+                /* Make the testimonial card narrower on small screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .testimonial__item .col-md-10 {
+                width: 90%;
+                /* Further reduce the width on extra small screens */
+            }
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .standout-icon {
+                font-size: 2.5rem;
+                /* Smaller icon size */
+            }
+
+            .standout-title {
+                font-size: 1.3rem;
+                /* Adjust font size for better readability */
+            }
+
+            .standout-text {
+                font-size: 1rem;
+                /* Adjust font size to ensure it's not too small */
+            }
+
+            .standout-feature {
+                margin-bottom: 20px;
+                /* Space between features */
+            }
+
+            .row {
+                display: flex;
+                flex-direction: column;
+                /* Stack features vertically */
+                align-items: center;
+                /* Center content */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fixed whatsapp icon -->
+    <div class="fixed-icon">
+        <a href="https://wa.me/message/DLHE4BU7XEOIG1 "><img src="img/whatsApp.png" alt="Icon"></a>
+    </div>
+
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>ENG <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>ENG</li>
+                    <li>MAL</li>
+                    <li>ARA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Call +971 509971176 &nbsp;||&nbsp; +91 7601016745</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>ENG <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>ENG</li>
+                                    <li>MAL</li>
+                                    <li>ARA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <!-- <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo-with-name.png" alt=""></a>
+                    </div> -->
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">HOME</a></li>
+                            <li><a href="./courses.html">COURSES</a></li>
+                            <li><a href="./about-us.html">ABOUT US</a>
+                            </li>
+                            <li><a href="./instructors.html">INSTRUCTORS</a></li>
+                            <li><a href="./contact-us.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="img/hero/bg-hero-1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Empowering Education for a Brighter Future</h6>
+                                <h2>Unlock Your Potential with Expert-Led Courses</h2>
+                                <p>Join thousands of learners and gain the skills you need to succeed in your personal
+                                    and professional life.
+                                </p>
+                                <a href="#" class="primary-btn">Start Learning Today <span
+                                        class="arrow_right"></span></a>
+                                <div class="hero__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="img/hero/bg-hero-2.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Enroll Now and Transform Your Future</h6>
+                                <h2>Learn Anytime, Anywhere with Flexible Classes</h2>
+                                <p>Empower yourself with knowledge that fits your schedule, no matter where you are.</p>
+                                <a href="#" class="primary-btn">Enroll now<span class="arrow_right"></span></a>
+                                <div class="hero__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Banner Section Begin -->
+    <!-- <section class="banner spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-4">
+                    <div class="banner__item">
+                        <div class="banner__item__pic">
+                            <img src="img/banner/banner-1.jpg" alt="">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Clothing Collections 2030</h2>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="banner__item banner__item--middle">
+                        <div class="banner__item__pic">
+                            <img src="img/banner/banner-2.jpg" alt="">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Accessories</h2>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner__item banner__item--last">
+                        <div class="banner__item__pic">
+                            <img src="img/banner/banner-3.jpg" alt="">
+                        </div>
+                        <div class="banner__item__text">
+                            <h2>Shoes Spring 2030</h2>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Banner Section End -->
+    <div class="container my-5">
+        <div class="courses__section">
+            <h2 class="text-center mb-5">Our Courses</h2>
+            <div class="row g-4 gap-2">
+                <!-- Course Card 1 -->
+                <div class="col-md-4 custom-gap mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://th.bing.com/th/id/OIP.VeFgL-kGE_0FIir6EoCBVAHaE8?rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="Spoken English">
+                        <div class="card-body">
+                            <h5 class="card-title">School Subjects Tution</h5>
+                            <p class="card-text">Master core subjects with personalized lessons that boost academic success and confidence.</p>
+                            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="col-md-4 custom-gap mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://leverageedu.com/blog/wp-content/uploads/2020/05/How-to-Learn-Spoken-English_.png"
+                            class="card-img-top" alt="Spoken English">
+                        <div class="card-body">
+                            <h5 class="card-title">Spoken English</h5>
+                            <p class="card-text">Improve your communication skills with our comprehensive Spoken English
+                                course.</p>
+                            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="col-md-4 custom-gap mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://qarabic.com/wp-content/uploads/2022/01/What-is-research-in-Islamic-Studies.webp"
+                            class="card-img-top" alt="School Subjects">
+                        <div class="card-body">
+                            <h5 class="card-title">Hayyan : Madarasa and Islamic studies</h5>
+                            <p class="card-text">Deepen your understanding of Islam with comprehensive lessons on Quran, Hadith, and Fiqh.
+                            </p>
+                            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="col-md-4 custom-gap mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://www.edarabia.com/wp-content/uploads/2020/02/spoken-arabic-classes-302148.jpg"
+                            class="card-img-top" alt="School Subjects">
+                        <div class="card-body">
+                            <h5 class="card-title">Hala : Spoken Arabic Course</h5>
+                            <p class="card-text">Learn to speak Arabic fluently with immersive language practice and cultural insights.</p>
+                            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="col-md-4 custom-gap mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://th.bing.com/th/id/R.d219a15a4ab432a3dd8e34ea15f83fdd?rik=Q4palB3C5HRyhQ&riu=http%3a%2f%2fjcfamilies.com%2fwp-content%2fuploads%2f2018%2f03%2fiStock-495774050-tutoring-b.jpg&ehk=9FWG1TXMBjEdQItfNhVJtH8h0o9MT84X%2f2fnpRGL8UY%3d&risl=&pid=ImgRaw&r=0"
+                            class="card-img-top" alt="School Subjects">
+                        <div class="card-body">
+                            <h5 class="card-title">Translation Course</h5>
+                            <p class="card-text">Gain expertise in translating texts accurately between languages with professional techniques.
+                            </p>
+                            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Standout Section -->
+    <div class="full-width-wrapper">
+        <section class="standout-section">
+            <div class="container">
+                <h2 class="text-center mb-5">What Makes Us Stand Out</h2>
+                <div class="row">
+                    <!-- Feature 1 -->
+                    <div class="col-md-3 standout-feature">
+                        <div class="standout-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h5 class="standout-title">Support for Students</h5>
+                        <p class="standout-text">With customized steering and a caring community, you will experience
+                            assured and equipped to acquire your instructional dreams.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-3 standout-feature">
+                        <div class="standout-icon">
+                            <i class="bi bi-gift"></i>
+                        </div>
+                        <h5 class="standout-title">Great Facilities</h5>
+                        <p class="standout-text">Experience the great facilities at Elscore Academy, where cutting-edge
+                            technology meets a welcoming environment to support your educational journey.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-md-3 standout-feature">
+                        <div class="standout-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="standout-title">Certified Staffs</h5>
+                        <p class="standout-text">Our certified staff are passionate educators dedicated to inspiring and
+                            guiding every student on their unique learning journey.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="col-md-3 standout-feature">
+                        <div class="standout-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h5 class="standout-title">Value-Based Learning</h5>
+                        <p class="standout-text">At Elscore, value-based learning isn’t just a technique; it’s a
+                            dedication to nurturing integrity, empathy, and critical thinking in every student.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="text-center mb-5">Student Reviews</h2>
+        <div class="testimonials__slider owl-carousel">
+            <div class="testimonial__item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 text-center">
+                            <img src="" alt="">
+                            <div class="testimonial__card">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"Elscore Academy transformed my learning experience. The instructors
+                                        are incredibly supportive, and the courses are well-structured."</p>
+                                    <footer class="blockquote-footer">Shifna Fathima <cite title="Source Title">Student</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 text-center">
+                            <div class="testimonial__card">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"The interactive learning methods at Elscore Academy made complex
+                                        topics easy to understand. Highly recommended!"</p>
+                                    <footer class="blockquote-footer">Sulaiman <cite
+                                            title="Source Title">Student</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 text-center">
+                            <div class="testimonial__card">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"I’ve gained so much from the courses here. The flexibility and
+                                        support have been exceptional!"</p>
+                                    <footer class="blockquote-footer">Muhammed Ali <cite
+                                            title="Source Title">Student</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more testimonials here -->
+        </div>
+    </section>
+
+    
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/name-only-white.png" alt=""></a>
+                        </div>
+                        <p>Elscore Academy offers online classes with expert instructors, comprehensive courses, and interactive learning. We aim to provide the best education with flexible schedules.
+                        </p></p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./courses.html">Courses</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li><p class="text-muted">Phone: +91 7601016745</p></li>
+                            <li><p class="text-muted">Email: elscoreacademy@gmail.com</p></li>
+                            <li><p class="text-muted">Location: Abudabhi</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | Elscore Academy
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Ensure Bootstrap's Carousel functionality -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.testimonials__slider').owlCarousel({
+                items: 1, // Number of items to display
+                loop: true, // Loop through items
+                autoplay: true, // Enable autoplay
+                autoplayTimeout: 4000, // Autoplay interval (5 seconds)
+                nav: true, // Show next/prev buttons
+                dots: true, // Disable dots
+                navText: ['', ''], // Custom next/prev text
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
